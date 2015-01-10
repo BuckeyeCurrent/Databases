@@ -28,28 +28,28 @@ BS_:
 BU_: WS200 MCN_Powertrain
 
 
-BO_ 1024 WS200_ID_Info: 8 WS200
+BO_ 1024 WS200IDInfo: 8 WS200
  SG_ TritiumID : 32|32@1+ (1,0) [0|0] "" Vector__XXX
- SG_ Serial_Number : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SerialNumber : 0|8@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 1025 WS200_Status: 8 WS200
+BO_ 1025 WS200Status: 8 WS200
  SG_ LimitFlags : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ ErrorFlags : 16|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ ActiveMotor : 32|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ TransmitErrorCount : 48|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ ReceiveErrorCount : 56|8@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 1026 WS200_Bus_Measurement: 8 WS200
- SG_ Bus_Voltage : 0|32@1- (1,0) [0|0] "" Vector__XXX
- SG_ Bus_Current : 32|32@1- (1,0) [0|0] "" Vector__XXX
+BO_ 1026 WS200BusMeasurement: 8 WS200
+ SG_ BusVoltage : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ BusCurrent : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 1027 Velocity_Measurement: 8 WS200
- SG_ Motor_Velocity : 0|32@1- (1,0) [0|0] "" Vector__XXX
- SG_ Vehicle_Velocity : 32|32@1- (1,0) [0|0] "" Vector__XXX
+BO_ 1027 VelocityMeasurement: 8 WS200
+ SG_ MotorVelocity : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ VehicleVelocity : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
 BO_ 1028 PhaseCurrent: 8 WS200
- SG_ Phase_B_Current : 0|32@1- (1,0) [0|0] "" Vector__XXX
- SG_ Phase_C_Current : 32|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ PhaseCurrentB : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ PhaseCurrentC : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
 BO_ 1029 MotorVoltage: 8 WS200
  SG_ Vq : 0|32@1- (1,0) [0|0] "" Vector__XXX
@@ -63,26 +63,26 @@ BO_ 1031 MotorBackEMF: 8 WS200
  SG_ BEMFq : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ BEMFd : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 1032 WS200_15V_Rail: 8 WS200
- SG_ Supply_15V : 32|32@1- (1,0) [0|0] "" Vector__XXX
+BO_ 1032 WS200Rail15V: 8 WS200
+ SG_ Supply15V : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 1033 WS200_Low_Rail: 8 WS200
- SG_ Rail_2V : 0|32@1- (1,0) [0|0] "" Vector__XXX
- SG_ Rail_3V : 32|32@1- (1,0) [0|0] "" Vector__XXX
+BO_ 1033 WS200LowRail: 8 WS200
+ SG_ Rail2V : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Rail3V : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
 BO_ 994 Coolant_Flow: 4 MCN_Powertrain
- SG_ Coolant_Flow : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CoolantFlow : 0|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 995 Motor_Coolant_Temp: 4 MCN_Powertrain
+BO_ 995 DynoMotorCoolantTemp: 4 MCN_Powertrain
  SG_ MotorCoolantTemp : 0|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 996 Motor_Controller_Coolant_Temp: 4 MCN_Powertrain
+BO_ 996 DynoMotorControllerCoolantTemp: 4 MCN_Powertrain
  SG_ MotorControllerCoolantTemp : 0|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 997 Radiator_Coolant_Temp: 4 MCN_Powertrain
+BO_ 997 DynoRadiatorCoolantTemp: 4 MCN_Powertrain
  SG_ RadiatorCoolantTemp : 0|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 998 Coolant_Pressures: 8 MCN_Powertrain
+BO_ 998 DynoCoolantPressures: 8 MCN_Powertrain
  SG_ CoolantPressure1 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CoolantPressure2 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
@@ -90,23 +90,27 @@ BO_ 100 DynLoc: 8 Vector__XXX
  SG_ Speed : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ Torque : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
+BO_ 999 DynoMCNStatus: 8 MCN_Powertrain
+ SG_ DynoMCNSystemFlags : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DynoMCNUserFlags : 32|32@1+ (1,0) [0|0] "" Vector__XXX
 
-SIG_VALTYPE_ 1026 Bus_Voltage : 1;
-SIG_VALTYPE_ 1026 Bus_Current : 1;
-SIG_VALTYPE_ 1027 Motor_Velocity : 1;
-SIG_VALTYPE_ 1027 Vehicle_Velocity : 1;
-SIG_VALTYPE_ 1028 Phase_B_Current : 1;
-SIG_VALTYPE_ 1028 Phase_C_Current : 1;
+
+SIG_VALTYPE_ 1026 BusVoltage : 1;
+SIG_VALTYPE_ 1026 BusCurrent : 1;
+SIG_VALTYPE_ 1027 MotorVelocity : 1;
+SIG_VALTYPE_ 1027 VehicleVelocity : 1;
+SIG_VALTYPE_ 1028 PhaseCurrentB : 1;
+SIG_VALTYPE_ 1028 PhaseCurrentC : 1;
 SIG_VALTYPE_ 1029 Vq : 1;
 SIG_VALTYPE_ 1029 Vd : 1;
 SIG_VALTYPE_ 1030 Iq : 1;
 SIG_VALTYPE_ 1030 Id : 1;
 SIG_VALTYPE_ 1031 BEMFq : 1;
 SIG_VALTYPE_ 1031 BEMFd : 1;
-SIG_VALTYPE_ 1032 Supply_15V : 1;
-SIG_VALTYPE_ 1033 Rail_2V : 1;
-SIG_VALTYPE_ 1033 Rail_3V : 1;
-SIG_VALTYPE_ 994 Coolant_Flow : 1;
+SIG_VALTYPE_ 1032 Supply15V : 1;
+SIG_VALTYPE_ 1033 Rail2V : 1;
+SIG_VALTYPE_ 1033 Rail3V : 1;
+SIG_VALTYPE_ 994 CoolantFlow : 1;
 SIG_VALTYPE_ 995 MotorCoolantTemp : 1;
 SIG_VALTYPE_ 996 MotorControllerCoolantTemp : 1;
 SIG_VALTYPE_ 997 RadiatorCoolantTemp : 1;
