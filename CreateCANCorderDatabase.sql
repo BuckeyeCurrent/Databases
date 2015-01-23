@@ -10,7 +10,9 @@ GRANT ALL ON CANCorder.* TO 'cancorder'@'localhost';
 
 USE CANCorder;
 
-CREATE TABLE CANMessages (CAN_ID INT, CAN_Message_Name VARCHAR(256), Unit VARCHAR(16), OK_Start INT, OK_End INT, Warn_Start INT, Warn_End INT );
+CREATE TABLE CANMessages (CAN_ID INT, CAN_Signal_Name VARCHAR(256), CAN_Message_Name VARCHAR(256), Unit VARCHAR(16), OK_Start INT, OK_End INT, Warn_Start INT, Warn_End INT, PRIMARY KEY (CAN_Signal_Name));
+
+
 
 --Add an index on CAN_ID
 ALTER TABLE CANMessages ADD KEY (CAN_ID);
