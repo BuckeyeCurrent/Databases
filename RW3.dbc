@@ -25,7 +25,7 @@ NS_ :
 
 BS_:
 
-BU_: WS200 MCN_Powertrain
+BU_: WS200 MCN_Powertrain Front_MCN Mid_MCN Rear_MCN IMU_MCN BIM1 BIM2 BIM3 BIM4 Computer BIM5
 
 
 BO_ 1024 WS200IDInfo: 8 WS200
@@ -86,7 +86,7 @@ BO_ 998 DynoCoolantPressures: 8 MCN_Powertrain
  SG_ CoolantPressure1 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CoolantPressure2 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 100 DynLoc: 8 Vector__XXX
+BO_ 100 DynLoc: 8 Computer
  SG_ Speed : 0|32@1- (1,0) [0|0] "MPH" Vector__XXX
  SG_ Torque : 32|32@1- (1,0) [0|0] "Nm" Vector__XXX
 
@@ -124,11 +124,345 @@ BO_ 1047 WS200SlipSpeed: 8 WS200
  SG_ SlipSpeed : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ Reserved : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
+BO_ 200 FrontSuspension: 4 Front_MCN
+ SG_ FrontSuspensionTravel : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 201 Steering: 4 Front_MCN
+ SG_ SteeringAngle : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 202 FrontWheel: 4 Front_MCN
+ SG_ FrontWheelSpeed : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 203 FrontBrake: 4 Front_MCN
+ SG_ FrontBrakePressure : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 204 FrontTire: 4 Front_MCN
+ SG_ FrontTireTemp : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 205 AmbientMeasurements: 8 Front_MCN
+ SG_ AmbientTemp : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AmbientPressure : 32|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 206 Radiator: 8 Front_MCN
+ SG_ RadiatorAirPressure : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ RadiatorCoolantTemp : 32|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 207 FrontMCNStatus: 8 Front_MCN
+ SG_ FrontSystemFlags : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ FrontUserFlags : 32|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 250 CoolantFlow: 4 Mid_MCN
+ SG_ CoolantFlow : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 251 PowertrainCoolant: 8 Mid_MCN
+ SG_ MotorCoolantTemp : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ControllerCoolantTemp : 32|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 252 MotorAirPressures: 4 Mid_MCN
+ SG_ MotorInletPressure : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 253 MotorPlateTemps: 8 Mid_MCN
+ SG_ MotorPlateTemp1 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ MotorPlateTemp2 : 32|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 254 StrainGauges: 8 Mid_MCN
+ SG_ StrainGauge1 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ StrainGauge2 : 32|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 257 MidMCNStatus: 8 Mid_MCN
+ SG_ MidSystemFlags : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ MidUserFlags : 32|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 300 RearSuspension: 4 Rear_MCN
+ SG_ RearSuspensionTravel : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 301 RearWheelSpeed: 4 Rear_MCN
+ SG_ RearWheelSpeed : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 302 RearTire: 4 Rear_MCN
+ SG_ RearTireTemp : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 303 ContactorBox: 4 Rear_MCN
+ SG_ ContactorBoxTemp : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 304 Shunts: 8 Rear_MCN
+ SG_ ShuntHV : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Shunt12V : 32|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 305 FrameFault: 1 Rear_MCN
+ SG_ FrameFault : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 306 RearBrake: 4 Rear_MCN
+ SG_ RearBrakePressure : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 307 RearMCNStatus: 8 Rear_MCN
+ SG_ RearSystemsFlags : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ RearUserFlags : 32|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 350 XAxisIMU: 8 IMU_MCN
+ SG_ Roll : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ XAccelerometer : 32|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 351 YAxisIMU: 8 IMU_MCN
+ SG_ Pitch : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ YAccelerometer : 32|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 352 ZAxisIMU: 8 IMU_MCN
+ SG_ Yaw : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ZAccelerometer : 32|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 353 IMUMCNStatus: 8 IMU_MCN
+ SG_ IMUSystemFlags : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ IMUUserFlags : 32|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 773 BIM1Stats1: 6 BIM1
+ SG_ BIM1MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1MinCellVoltage : 24|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1MinCellNumber : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 774 BIM1Stats2: 5 BIM1
+ SG_ BIM1AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1StdDevVoltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1CellsBalancing : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 775 BIM2Stats1: 6 BIM2
+ SG_ BIM2MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2MinCellVoltage : 24|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2MinCellNumber : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 776 BIM2Stats2: 5 BIM2
+ SG_ BIM2AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2StdDevVoltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2CellsBalancing : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 777 BIM3Stats1: 6 BIM3
+ SG_ BIM3MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3MinCellVoltage : 24|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3MinCellNumber : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 778 BIM3Stats2: 5 BIM3
+ SG_ BIM3AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3StdDevVoltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3CellsBalancing : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 779 BIM4Stats1: 6 BIM4
+ SG_ BIM4MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4MinCellVoltage : 24|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4MinCellNumber : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 780 BIM4Stats2: 5 BIM4
+ SG_ BIM4AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4StdDevVoltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4CellsBalancing : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 781 BIM5Stats1: 6 BIM5
+ SG_ BIM5MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5MinCellVoltage : 24|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5MinCellNumber : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 782 BIM5Stats2: 5 BIM5
+ SG_ BIM5AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5StdDevVoltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5CellsBalancing : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 784 Cells1To4: 8 BIM1
+ SG_ Cell1VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell2VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell3VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell4VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 785 Cells5To8: 8 BIM1
+ SG_ Cell5VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell6VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell7VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell8VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 786 Cells9To12: 8 BIM1
+ SG_ Cell9VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell10VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell11VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell12VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 787 Cells13To16: 8 BIM1
+ SG_ Cell13VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell14VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell15VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell16VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 788 Cells17To20: 8 BIM1
+ SG_ Cell17VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell18VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell19VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell20VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 789 Cells21To24: 8 BIM1
+ SG_ Cell21VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell22VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell23VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell24VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 790 Cells25To28: 8 BIM2
+ SG_ Cell25VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell26VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell27VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell28VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 791 Cells29To32: 8 BIM2
+ SG_ Cell29VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell30VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell31VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell32VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 792 Cells33To36: 8 BIM2
+ SG_ Cell33VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell34VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell35VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell36VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 793 Cells37To40: 8 BIM2
+ SG_ Cell37VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell38VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell39VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell40VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 794 Cells41To44: 8 BIM2
+ SG_ Cell41VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell42VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell43VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell44VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 795 Cells45To48: 8 BIM2
+ SG_ Cell45VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell46VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell47VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell48VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 796 Cells49To52: 8 BIM3
+ SG_ Cell49VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell50VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell51VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell52VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 797 Cells53To56: 8 BIM3
+ SG_ Cell53VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell54VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell55VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell56VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 798 Cells57To60: 8 BIM3
+ SG_ Cell57VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell58VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell59VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell60VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 799 Cells61To64: 8 BIM3
+ SG_ Cell61VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell62VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell63VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell64VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 800 Cells65To68: 8 BIM3
+ SG_ Cell65VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell66VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell67VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell68VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 801 Cells69To72: 8 BIM3
+ SG_ Cell69VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell70VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell71VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell72VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 802 Cells73To76: 8 BIM4
+ SG_ Cell73VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell74VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell75VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell76VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 803 Cells77To80: 8 BIM4
+ SG_ Cell77VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell78VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell79VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell80VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 804 Cells81To84: 8 BIM4
+ SG_ Cell81VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell82VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell83VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell84VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 805 Cells85To88: 8 BIM4
+ SG_ Cell85VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell86VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell87VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell88VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 806 Cells89To92: 8 BIM4
+ SG_ Cell89VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell90VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell91VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell92VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 807 Cells93To96: 8 BIM4
+ SG_ Cell93VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell94VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell95VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell96VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 808 Cells97To100: 8 BIM5
+ SG_ Cell97VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell98VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell99VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell100VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 809 Cells101To104: 8 BIM5
+ SG_ Cell101VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell102VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell103VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell104VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 810 Cells105To108: 8 BIM5
+ SG_ Cell105VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell106VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell107VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell108VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+
 
 CM_ SG_ 1025 ActiveMotor "[0,10]";
 CM_ SG_ 100 Speed "[-10,10]";
 CM_ SG_ 100 Torque "[-20,50]";
-CM_ BO_ 991 "";
+CM_ BO_ 784 "RTR";
+CM_ BO_ 785 "RTR";
+CM_ BO_ 786 "RTR";
+CM_ BO_ 787 "RTR";
+CM_ BO_ 788 "RTR";
+CM_ BO_ 789 "RTR";
+CM_ BO_ 790 "RTR";
+CM_ BO_ 791 "RTR";
+CM_ BO_ 792 "RTR";
+CM_ BO_ 793 "RTR";
+CM_ BO_ 794 "RTR";
+CM_ BO_ 795 "RTR";
+CM_ BO_ 796 "RTR";
+CM_ BO_ 797 "RTR";
+CM_ BO_ 798 "RTR";
+CM_ BO_ 799 "RTR";
+CM_ BO_ 800 "RTR";
+CM_ BO_ 801 "RTR";
+CM_ BO_ 802 "RTR";
+CM_ BO_ 803 "RTR";
+CM_ BO_ 804 "RTR";
+CM_ BO_ 805 "RTR";
+CM_ BO_ 806 "RTR";
+CM_ BO_ 807 "RTR";
+CM_ BO_ 808 "RTR";
+CM_ BO_ 809 "RTR";
+CM_ BO_ 810 "RTR";
 SIG_VALTYPE_ 1026 BusVoltage : 1;
 SIG_VALTYPE_ 1026 BusCurrent : 1;
 SIG_VALTYPE_ 1027 MotorVelocity : 1;
@@ -166,3 +500,41 @@ SIG_VALTYPE_ 1038 DCBusAmpHours : 1;
 SIG_VALTYPE_ 1038 Odometer : 1;
 SIG_VALTYPE_ 1047 SlipSpeed : 1;
 SIG_VALTYPE_ 1047 Reserved : 1;
+SIG_VALTYPE_ 200 FrontSuspensionTravel : 1;
+SIG_VALTYPE_ 201 SteeringAngle : 1;
+SIG_VALTYPE_ 202 FrontWheelSpeed : 1;
+SIG_VALTYPE_ 203 FrontBrakePressure : 1;
+SIG_VALTYPE_ 204 FrontTireTemp : 1;
+SIG_VALTYPE_ 205 AmbientTemp : 1;
+SIG_VALTYPE_ 205 AmbientPressure : 1;
+SIG_VALTYPE_ 206 RadiatorAirPressure : 1;
+SIG_VALTYPE_ 206 RadiatorCoolantTemp : 1;
+SIG_VALTYPE_ 207 FrontSystemFlags : 1;
+SIG_VALTYPE_ 207 FrontUserFlags : 1;
+SIG_VALTYPE_ 250 CoolantFlow : 1;
+SIG_VALTYPE_ 251 MotorCoolantTemp : 1;
+SIG_VALTYPE_ 251 ControllerCoolantTemp : 1;
+SIG_VALTYPE_ 252 MotorInletPressure : 1;
+SIG_VALTYPE_ 253 MotorPlateTemp1 : 1;
+SIG_VALTYPE_ 253 MotorPlateTemp2 : 1;
+SIG_VALTYPE_ 254 StrainGauge1 : 1;
+SIG_VALTYPE_ 254 StrainGauge2 : 1;
+SIG_VALTYPE_ 257 MidSystemFlags : 1;
+SIG_VALTYPE_ 257 MidUserFlags : 1;
+SIG_VALTYPE_ 300 RearSuspensionTravel : 1;
+SIG_VALTYPE_ 301 RearWheelSpeed : 1;
+SIG_VALTYPE_ 302 RearTireTemp : 1;
+SIG_VALTYPE_ 303 ContactorBoxTemp : 1;
+SIG_VALTYPE_ 304 ShuntHV : 1;
+SIG_VALTYPE_ 304 Shunt12V : 1;
+SIG_VALTYPE_ 306 RearBrakePressure : 1;
+SIG_VALTYPE_ 307 RearSystemsFlags : 1;
+SIG_VALTYPE_ 307 RearUserFlags : 1;
+SIG_VALTYPE_ 350 Roll : 1;
+SIG_VALTYPE_ 350 XAccelerometer : 1;
+SIG_VALTYPE_ 351 Pitch : 1;
+SIG_VALTYPE_ 351 YAccelerometer : 1;
+SIG_VALTYPE_ 352 Yaw : 1;
+SIG_VALTYPE_ 352 ZAccelerometer : 1;
+SIG_VALTYPE_ 353 IMUSystemFlags : 1;
+SIG_VALTYPE_ 353 IMUUserFlags : 1;
