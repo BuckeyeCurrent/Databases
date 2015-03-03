@@ -14,7 +14,7 @@
     <m_configfileversion>2</m_configfileversion>
     <m_cantracewmversion>
     </m_cantracewmversion>
-    <m_lastdayedited>2/28/2015 3:19:55 PM</m_lastdayedited>
+    <m_lastdayedited>2/28/2015 3:21:08 PM</m_lastdayedited>
   </xmlInformation>
   <cantraceDatabase xmlns="">
     <associateDatabase>
@@ -1473,7 +1473,7 @@
         <data_7>0</data_7>
       </data>
       <extended>false</extended>
-      <rtr>false</rtr>
+      <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
       <intervall>100</intervall>
