@@ -215,6 +215,17 @@ BO_ 353 IMUMCNStatus: 8 IMU_MCN
  SG_ IMUSystemFlags : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ IMUUserFlags : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
+BO_ 480 MotorDriveCommand: 8 Rider_Controls
+ SG_ MotorRPMSetpoint : 0|32@1- (1,0) [0|4000] "RPM" Vector__XXX
+ SG_ MotorCurrentSetpoint : 32|32@1- (1,0) [0|1] "%" Vector__XXX
+
+BO_ 481 MotorPowerCommand: 8 Rider_Controls
+ SG_ BusCurrentSetpoint : 32|32@1- (1,0) [0|1] "%" Vector__XXX
+
+BO_ 483 DriveControlsLimits: 8 Rider_Controls
+ SG_ BatteryLimit : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPMLimit : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+ 
 BO_ 773 BIM1Stats1: 6 BIM1
  SG_ BIM1MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM1MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
@@ -432,18 +443,66 @@ BO_ 810 Cells105To108: 8 BIM5
  SG_ Cell107VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
  SG_ Cell108VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 480 MotorDriveCommand: 8 Rider_Controls
- SG_ MotorRPMSetpoint : 0|32@1- (1,0) [0|4000] "RPM" Vector__XXX
- SG_ MotorCurrentSetpoint : 32|32@1- (1,0) [0|1] "%" Vector__XXX
+BO_ 812 CellTemp1: 8 BIM1
+ SG_ CellTemp1 : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp2 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp3 : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp4 : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+ 
+BO_ 813 CellTemp2: 8 BIM1
+ SG_ CellTemp5 : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp6 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp7 : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp8 : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+  
+BO_ 814 CellTemp3: 8 BIM2
+ SG_ CellTemp9 : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp10 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp11 : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp12 : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+ 
+BO_ 815 CellTemp4: 8 BIM2
+ SG_ CellTemp13 : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp14 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp15 : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp16 : 48|16@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 481 MotorPowerCommand: 8 Rider_Controls
- SG_ BusCurrentSetpoint : 32|32@1- (1,0) [0|1] "%" Vector__XXX
+BO_ 816 CellTemp5: 8 BIM3
+ SG_ CellTemp17 : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp18 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp19 : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp20 : 48|16@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 483 DriveControlsLimits: 8 Rider_Controls
- SG_ BatteryLimit : 0|8@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RPMLimit : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+BO_ 817 CellTemp6: 8 BIM3
+ SG_ CellTemp21 : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp22 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp23 : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp24 : 48|16@1+ (1,0) [0|0] "" Vector__XXX
 
-
+BO_ 818 CellTemp7: 8 BIM4
+ SG_ CellTemp25 : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp26 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp27 : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp28 : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+ 
+BO_ 819 CellTemp8: 8 BIM4
+ SG_ CellTemp29 : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp30 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp31 : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp32 : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+ 
+BO_ 820 CellTemp9: 8 BIM5
+ SG_ CellTemp33 : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp34 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp35 : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp36 : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+ 
+BO_ 821 CellTemp10: 8 BIM5
+ SG_ CellTemp37 : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp38 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp39 : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp40 : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+ 
 CM_ SG_ 1025 ActiveMotor "[0,10]";
 CM_ SG_ 100 Speed "[-10,10]";
 CM_ SG_ 100 Torque "[-20,50]";
