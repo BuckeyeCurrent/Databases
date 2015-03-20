@@ -25,7 +25,7 @@ NS_ :
 
 BS_:
 
-BU_: WS200 MCN_Powertrain Front_MCN Mid_MCN Rear_MCN IMU_MCN BIM1 BIM2 BIM3 BIM4 Computer BIM5
+BU_: WS200 MCN_Powertrain Front_MCN Mid_MCN Rear_MCN IMU_MCN BIM1 BIM2 BIM3 BIM4 Computer BIM5 Rider_Controls
 
 
 BO_ 1024 WS200IDInfo: 8 WS200
@@ -215,6 +215,17 @@ BO_ 353 IMUMCNStatus: 8 IMU_MCN
  SG_ IMUSystemFlags : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ IMUUserFlags : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
+BO_ 480 MotorDriveCommand: 8 Rider_Controls
+ SG_ MotorRPMSetpoint : 0|32@1- (1,0) [0|4000] "RPM" Vector__XXX
+ SG_ MotorCurrentSetpoint : 32|32@1- (1,0) [0|1] "%" Vector__XXX
+
+BO_ 481 MotorPowerCommand: 8 Rider_Controls
+ SG_ BusCurrentSetpoint : 32|32@1- (1,0) [0|1] "%" Vector__XXX
+
+BO_ 483 DriveControlsLimits: 8 Rider_Controls
+ SG_ BatteryLimit : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPMLimit : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+ 
 BO_ 773 BIM1Stats1: 6 BIM1
  SG_ BIM1MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM1MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
@@ -443,7 +454,7 @@ BO_ 813 CellTemp2: 8 BIM1
  SG_ CellTemp6 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp7 : 32|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp8 : 48|16@1+ (1,0) [0|0] "" Vector__XXX
- 
+  
 BO_ 814 CellTemp3: 8 BIM2
  SG_ CellTemp9 : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp10 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
@@ -522,6 +533,12 @@ CM_ BO_ 807 "RTR";
 CM_ BO_ 808 "RTR";
 CM_ BO_ 809 "RTR";
 CM_ BO_ 810 "RTR";
+CM_ BO_ 480 "";
+CM_ BO_ 481 "";
+CM_ SG_ 481 BusCurrentSetpoint "";
+CM_ BO_ 483 "";
+CM_ SG_ 483 BatteryLimit "";
+CM_ SG_ 483 RPMLimit "";
 SIG_VALTYPE_ 1026 BusVoltage : 1;
 SIG_VALTYPE_ 1026 BusCurrent : 1;
 SIG_VALTYPE_ 1027 MotorVelocity : 1;
@@ -597,3 +614,6 @@ SIG_VALTYPE_ 352 Yaw : 1;
 SIG_VALTYPE_ 352 ZAccelerometer : 1;
 SIG_VALTYPE_ 353 IMUSystemFlags : 1;
 SIG_VALTYPE_ 353 IMUUserFlags : 1;
+SIG_VALTYPE_ 480 MotorRPMSetpoint : 1;
+SIG_VALTYPE_ 480 MotorCurrentSetpoint : 1;
+SIG_VALTYPE_ 481 BusCurrentSetpoint : 1;
