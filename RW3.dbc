@@ -231,8 +231,8 @@ BO_ 483 DriveControlsLimits: 8 Rider_Controls
 BO_ 773 BIM1Stats1: 6 BIM1
  SG_ BIM1MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM1MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM1MinCellVoltage : 24|16@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM1MinCellNumber : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1MinCellVoltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1MinCellNumber : 48|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 774 BIM1Stats2: 5 BIM1
  SG_ BIM1AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
@@ -242,8 +242,8 @@ BO_ 774 BIM1Stats2: 5 BIM1
 BO_ 775 BIM2Stats1: 6 BIM2
  SG_ BIM2MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM2MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM2MinCellVoltage : 24|16@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM2MinCellNumber : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2MinCellVoltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2MinCellNumber : 48|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 776 BIM2Stats2: 5 BIM2
  SG_ BIM2AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
@@ -253,8 +253,8 @@ BO_ 776 BIM2Stats2: 5 BIM2
 BO_ 777 BIM3Stats1: 6 BIM3
  SG_ BIM3MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM3MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM3MinCellVoltage : 24|16@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM3MinCellNumber : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3MinCellVoltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3MinCellNumber : 48|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 778 BIM3Stats2: 5 BIM3
  SG_ BIM3AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
@@ -264,8 +264,8 @@ BO_ 778 BIM3Stats2: 5 BIM3
 BO_ 779 BIM4Stats1: 6 BIM4
  SG_ BIM4MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM4MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM4MinCellVoltage : 24|16@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM4MinCellNumber : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4MinCellVoltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4MinCellNumber : 48|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 780 BIM4Stats2: 5 BIM4
  SG_ BIM4AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
@@ -275,8 +275,8 @@ BO_ 780 BIM4Stats2: 5 BIM4
 BO_ 781 BIM5Stats1: 6 BIM5
  SG_ BIM5MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM5MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM5MinCellVoltage : 24|16@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM5MinCellNumber : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5MinCellVoltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5MinCellNumber : 48|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 782 BIM5Stats2: 5 BIM5
  SG_ BIM5AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
