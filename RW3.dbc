@@ -223,9 +223,11 @@ BO_ 481 MotorPowerCommand: 8 Rider_Controls
  SG_ BusCurrentSetpoint : 32|32@1- (1,0) [0|1] "%" Vector__XXX
 
 BO_ 483 DriveControlsLimits: 8 Rider_Controls
- SG_ BatteryLimit : 0|8@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RPMLimit : 8|8@1+ (1,0) [0|1] "" Vector__XXX
- 
+ SG_ BatteryLimit : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPMLimit : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ThrottleLock : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ StatusLimit : 3|1@1+ (1,0) [0|0] "" Vector__XXX
+
 BO_ 773 BIM1Stats1: 6 BIM1
  SG_ BIM1MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM1MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
@@ -448,19 +450,19 @@ BO_ 812 CellTemp1: 8 BIM1
  SG_ CellTemp2 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp3 : 32|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp4 : 48|16@1+ (1,0) [0|0] "" Vector__XXX
- 
+
 BO_ 813 CellTemp2: 8 BIM1
  SG_ CellTemp5 : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp6 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp7 : 32|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp8 : 48|16@1+ (1,0) [0|0] "" Vector__XXX
-  
+
 BO_ 814 CellTemp3: 8 BIM2
  SG_ CellTemp9 : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp10 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp11 : 32|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp12 : 48|16@1+ (1,0) [0|0] "" Vector__XXX
- 
+
 BO_ 815 CellTemp4: 8 BIM2
  SG_ CellTemp13 : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp14 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
@@ -484,28 +486,60 @@ BO_ 818 CellTemp7: 8 BIM4
  SG_ CellTemp26 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp27 : 32|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp28 : 48|16@1+ (1,0) [0|0] "" Vector__XXX
- 
+
 BO_ 819 CellTemp8: 8 BIM4
  SG_ CellTemp29 : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp30 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp31 : 32|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp32 : 48|16@1+ (1,0) [0|0] "" Vector__XXX
- 
+
 BO_ 820 CellTemp9: 8 BIM5
  SG_ CellTemp33 : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp34 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp35 : 32|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp36 : 48|16@1+ (1,0) [0|0] "" Vector__XXX
- 
+
 BO_ 821 CellTemp10: 8 BIM5
  SG_ CellTemp37 : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp38 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp39 : 32|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp40 : 48|16@1+ (1,0) [0|0] "" Vector__XXX
- 
+
+BO_ 823 BIM1Status: 6 BIM1
+ SG_ BIM1SystemFlags : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1ShortHighStatuses : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1ShortLowStatuses : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 824 BIM2Status: 6 BIM2
+ SG_ BIM2SystemFlags : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2ShortHighStatuses : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2ShortLowStatuses : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 825 BIM3Status: 6 BIM3
+ SG_ BIM3SystemFlags : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3ShortHighStatuses : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3ShortLowStatuses : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 826 BIM4Status: 6 BIM4
+ SG_ BIM4SystemFlags : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4ShortHighStatuses : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4ShortLowStatuses : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 827 BIM5Status: 6 BIM5
+ SG_ BIM5SystemFlags : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5ShortHighStatuses : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5ShortLowStatuses : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+
+
 CM_ SG_ 1025 ActiveMotor "[0,10]";
 CM_ SG_ 100 Speed "[-10,10]";
 CM_ SG_ 100 Torque "[-20,50]";
+CM_ BO_ 480 "";
+CM_ BO_ 481 "";
+CM_ SG_ 481 BusCurrentSetpoint "";
+CM_ BO_ 483 "";
+CM_ SG_ 483 BatteryLimit "";
+CM_ SG_ 483 RPMLimit "";
 CM_ BO_ 784 "RTR";
 CM_ BO_ 785 "RTR";
 CM_ BO_ 786 "RTR";
@@ -533,12 +567,9 @@ CM_ BO_ 807 "RTR";
 CM_ BO_ 808 "RTR";
 CM_ BO_ 809 "RTR";
 CM_ BO_ 810 "RTR";
-CM_ BO_ 480 "";
-CM_ BO_ 481 "";
-CM_ SG_ 481 BusCurrentSetpoint "";
-CM_ BO_ 483 "";
-CM_ SG_ 483 BatteryLimit "";
-CM_ SG_ 483 RPMLimit "";
+CM_ BO_ 823 "";
+CM_ BO_ 824 "";
+CM_ BO_ 827 "";
 SIG_VALTYPE_ 1026 BusVoltage : 1;
 SIG_VALTYPE_ 1026 BusCurrent : 1;
 SIG_VALTYPE_ 1027 MotorVelocity : 1;

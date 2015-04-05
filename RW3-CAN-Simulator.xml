@@ -14,7 +14,7 @@
     <m_configfileversion>2</m_configfileversion>
     <m_cantracewmversion>
     </m_cantracewmversion>
-    <m_lastdayedited>2/28/2015 3:21:08 PM</m_lastdayedited>
+    <m_lastdayedited>4/1/2015 12:58:41 AM</m_lastdayedited>
   </xmlInformation>
   <cantraceDatabase xmlns="">
     <associateDatabase>
@@ -2030,6 +2030,396 @@
       <channel>1</channel>
       <uiflags>0</uiflags>
     </cansendframe>
+    <cansendframe>
+      <channelnumber>1</channelnumber>
+      <id>821</id>
+      <dlc>8</dlc>
+      <data>
+        <data_0>60</data_0>
+        <data_1>0</data_1>
+        <data_2>60</data_2>
+        <data_3>0</data_3>
+        <data_4>60</data_4>
+        <data_5>0</data_5>
+        <data_6>60</data_6>
+        <data_7>0</data_7>
+      </data>
+      <extended>false</extended>
+      <rtr>false</rtr>
+      <cyclic>false</cyclic>
+      <burst>1</burst>
+      <intervall>500</intervall>
+      <comment>
+      </comment>
+      <txrx>
+      </txrx>
+      <channel>1</channel>
+      <uiflags>0</uiflags>
+    </cansendframe>
+    <cansendframe>
+      <channelnumber>1</channelnumber>
+      <id>812</id>
+      <dlc>8</dlc>
+      <data>
+        <data_0>60</data_0>
+        <data_1>0</data_1>
+        <data_2>60</data_2>
+        <data_3>0</data_3>
+        <data_4>60</data_4>
+        <data_5>0</data_5>
+        <data_6>60</data_6>
+        <data_7>0</data_7>
+      </data>
+      <extended>false</extended>
+      <rtr>false</rtr>
+      <cyclic>false</cyclic>
+      <burst>1</burst>
+      <intervall>500</intervall>
+      <comment>
+      </comment>
+      <txrx>
+      </txrx>
+      <channel>1</channel>
+      <uiflags>0</uiflags>
+    </cansendframe>
+    <cansendframe>
+      <channelnumber>1</channelnumber>
+      <id>813</id>
+      <dlc>8</dlc>
+      <data>
+        <data_0>60</data_0>
+        <data_1>0</data_1>
+        <data_2>60</data_2>
+        <data_3>0</data_3>
+        <data_4>60</data_4>
+        <data_5>0</data_5>
+        <data_6>60</data_6>
+        <data_7>0</data_7>
+      </data>
+      <extended>false</extended>
+      <rtr>false</rtr>
+      <cyclic>false</cyclic>
+      <burst>1</burst>
+      <intervall>500</intervall>
+      <comment>
+      </comment>
+      <txrx>
+      </txrx>
+      <channel>1</channel>
+      <uiflags>0</uiflags>
+    </cansendframe>
+    <cansendframe>
+      <channelnumber>1</channelnumber>
+      <id>814</id>
+      <dlc>8</dlc>
+      <data>
+        <data_0>60</data_0>
+        <data_1>0</data_1>
+        <data_2>60</data_2>
+        <data_3>0</data_3>
+        <data_4>60</data_4>
+        <data_5>0</data_5>
+        <data_6>60</data_6>
+        <data_7>0</data_7>
+      </data>
+      <extended>false</extended>
+      <rtr>false</rtr>
+      <cyclic>false</cyclic>
+      <burst>1</burst>
+      <intervall>500</intervall>
+      <comment>
+      </comment>
+      <txrx>
+      </txrx>
+      <channel>1</channel>
+      <uiflags>0</uiflags>
+    </cansendframe>
+    <cansendframe>
+      <channelnumber>1</channelnumber>
+      <id>815</id>
+      <dlc>8</dlc>
+      <data>
+        <data_0>60</data_0>
+        <data_1>0</data_1>
+        <data_2>60</data_2>
+        <data_3>0</data_3>
+        <data_4>60</data_4>
+        <data_5>0</data_5>
+        <data_6>60</data_6>
+        <data_7>0</data_7>
+      </data>
+      <extended>false</extended>
+      <rtr>false</rtr>
+      <cyclic>false</cyclic>
+      <burst>1</burst>
+      <intervall>500</intervall>
+      <comment>
+      </comment>
+      <txrx>
+      </txrx>
+      <channel>1</channel>
+      <uiflags>0</uiflags>
+    </cansendframe>
+    <cansendframe>
+      <channelnumber>1</channelnumber>
+      <id>816</id>
+      <dlc>8</dlc>
+      <data>
+        <data_0>60</data_0>
+        <data_1>0</data_1>
+        <data_2>60</data_2>
+        <data_3>0</data_3>
+        <data_4>60</data_4>
+        <data_5>0</data_5>
+        <data_6>60</data_6>
+        <data_7>0</data_7>
+      </data>
+      <extended>false</extended>
+      <rtr>false</rtr>
+      <cyclic>false</cyclic>
+      <burst>1</burst>
+      <intervall>500</intervall>
+      <comment>
+      </comment>
+      <txrx>
+      </txrx>
+      <channel>1</channel>
+      <uiflags>0</uiflags>
+    </cansendframe>
+    <cansendframe>
+      <channelnumber>1</channelnumber>
+      <id>817</id>
+      <dlc>8</dlc>
+      <data>
+        <data_0>60</data_0>
+        <data_1>0</data_1>
+        <data_2>60</data_2>
+        <data_3>0</data_3>
+        <data_4>60</data_4>
+        <data_5>0</data_5>
+        <data_6>60</data_6>
+        <data_7>0</data_7>
+      </data>
+      <extended>false</extended>
+      <rtr>false</rtr>
+      <cyclic>false</cyclic>
+      <burst>1</burst>
+      <intervall>500</intervall>
+      <comment>
+      </comment>
+      <txrx>
+      </txrx>
+      <channel>1</channel>
+      <uiflags>0</uiflags>
+    </cansendframe>
+    <cansendframe>
+      <channelnumber>1</channelnumber>
+      <id>818</id>
+      <dlc>8</dlc>
+      <data>
+        <data_0>60</data_0>
+        <data_1>0</data_1>
+        <data_2>60</data_2>
+        <data_3>0</data_3>
+        <data_4>60</data_4>
+        <data_5>0</data_5>
+        <data_6>60</data_6>
+        <data_7>0</data_7>
+      </data>
+      <extended>false</extended>
+      <rtr>false</rtr>
+      <cyclic>false</cyclic>
+      <burst>1</burst>
+      <intervall>500</intervall>
+      <comment>
+      </comment>
+      <txrx>
+      </txrx>
+      <channel>1</channel>
+      <uiflags>0</uiflags>
+    </cansendframe>
+    <cansendframe>
+      <channelnumber>1</channelnumber>
+      <id>819</id>
+      <dlc>8</dlc>
+      <data>
+        <data_0>60</data_0>
+        <data_1>0</data_1>
+        <data_2>60</data_2>
+        <data_3>0</data_3>
+        <data_4>60</data_4>
+        <data_5>0</data_5>
+        <data_6>60</data_6>
+        <data_7>0</data_7>
+      </data>
+      <extended>false</extended>
+      <rtr>false</rtr>
+      <cyclic>false</cyclic>
+      <burst>1</burst>
+      <intervall>500</intervall>
+      <comment>
+      </comment>
+      <txrx>
+      </txrx>
+      <channel>1</channel>
+      <uiflags>0</uiflags>
+    </cansendframe>
+    <cansendframe>
+      <channelnumber>1</channelnumber>
+      <id>820</id>
+      <dlc>8</dlc>
+      <data>
+        <data_0>60</data_0>
+        <data_1>0</data_1>
+        <data_2>60</data_2>
+        <data_3>0</data_3>
+        <data_4>60</data_4>
+        <data_5>0</data_5>
+        <data_6>60</data_6>
+        <data_7>0</data_7>
+      </data>
+      <extended>false</extended>
+      <rtr>false</rtr>
+      <cyclic>false</cyclic>
+      <burst>1</burst>
+      <intervall>500</intervall>
+      <comment>
+      </comment>
+      <txrx>
+      </txrx>
+      <channel>1</channel>
+      <uiflags>0</uiflags>
+    </cansendframe>
+    <cansendframe>
+      <channelnumber>1</channelnumber>
+      <id>823</id>
+      <dlc>6</dlc>
+      <data>
+        <data_0>0</data_0>
+        <data_1>0</data_1>
+        <data_2>0</data_2>
+        <data_3>0</data_3>
+        <data_4>0</data_4>
+        <data_5>0</data_5>
+        <data_6>0</data_6>
+        <data_7>0</data_7>
+      </data>
+      <extended>false</extended>
+      <rtr>false</rtr>
+      <cyclic>false</cyclic>
+      <burst>1</burst>
+      <intervall>1000</intervall>
+      <comment>
+      </comment>
+      <txrx>
+      </txrx>
+      <channel>1</channel>
+      <uiflags>0</uiflags>
+    </cansendframe>
+    <cansendframe>
+      <channelnumber>1</channelnumber>
+      <id>824</id>
+      <dlc>6</dlc>
+      <data>
+        <data_0>0</data_0>
+        <data_1>0</data_1>
+        <data_2>0</data_2>
+        <data_3>0</data_3>
+        <data_4>0</data_4>
+        <data_5>0</data_5>
+        <data_6>0</data_6>
+        <data_7>0</data_7>
+      </data>
+      <extended>false</extended>
+      <rtr>false</rtr>
+      <cyclic>false</cyclic>
+      <burst>1</burst>
+      <intervall>1000</intervall>
+      <comment>
+      </comment>
+      <txrx>
+      </txrx>
+      <channel>1</channel>
+      <uiflags>0</uiflags>
+    </cansendframe>
+    <cansendframe>
+      <channelnumber>1</channelnumber>
+      <id>825</id>
+      <dlc>6</dlc>
+      <data>
+        <data_0>0</data_0>
+        <data_1>0</data_1>
+        <data_2>0</data_2>
+        <data_3>0</data_3>
+        <data_4>0</data_4>
+        <data_5>0</data_5>
+        <data_6>0</data_6>
+        <data_7>0</data_7>
+      </data>
+      <extended>false</extended>
+      <rtr>false</rtr>
+      <cyclic>false</cyclic>
+      <burst>1</burst>
+      <intervall>1000</intervall>
+      <comment>
+      </comment>
+      <txrx>
+      </txrx>
+      <channel>1</channel>
+      <uiflags>0</uiflags>
+    </cansendframe>
+    <cansendframe>
+      <channelnumber>1</channelnumber>
+      <id>826</id>
+      <dlc>6</dlc>
+      <data>
+        <data_0>0</data_0>
+        <data_1>0</data_1>
+        <data_2>0</data_2>
+        <data_3>0</data_3>
+        <data_4>0</data_4>
+        <data_5>0</data_5>
+        <data_6>0</data_6>
+        <data_7>0</data_7>
+      </data>
+      <extended>false</extended>
+      <rtr>false</rtr>
+      <cyclic>false</cyclic>
+      <burst>1</burst>
+      <intervall>1000</intervall>
+      <comment>
+      </comment>
+      <txrx>
+      </txrx>
+      <channel>1</channel>
+      <uiflags>0</uiflags>
+    </cansendframe>
+    <cansendframe>
+      <channelnumber>1</channelnumber>
+      <id>827</id>
+      <dlc>6</dlc>
+      <data>
+        <data_0>0</data_0>
+        <data_1>0</data_1>
+        <data_2>0</data_2>
+        <data_3>0</data_3>
+        <data_4>0</data_4>
+        <data_5>0</data_5>
+        <data_6>0</data_6>
+        <data_7>0</data_7>
+      </data>
+      <extended>false</extended>
+      <rtr>false</rtr>
+      <cyclic>false</cyclic>
+      <burst>1</burst>
+      <intervall>1000</intervall>
+      <comment>
+      </comment>
+      <txrx>
+      </txrx>
+      <channel>1</channel>
+      <uiflags>0</uiflags>
+    </cansendframe>
     <HeaderColumn>
       <columnNr>0</columnNr>
       <column_width>50</column_width>
@@ -2123,7 +2513,7 @@
   </sendtabframe>
   <traceTabConfig xmlns="">
     <showgrids>false</showgrids>
-    <fixedview>false</fixedview>
+    <fixedview>true</fixedview>
     <noneInterpretation>true</noneInterpretation>
     <canOpenInterpretation>false</canOpenInterpretation>
     <J1939Interpretation>false</J1939Interpretation>
@@ -2243,7 +2633,7 @@
       <canspeedconstants>0</canspeedconstants>
       <driverchannel>0</driverchannel>
       <instancename>Play log file</instancename>
-      <silent>false</silent>
+      <silent>true</silent>
       <nosamp>0</nosamp>
       <sjw>0</sjw>
       <tseg1>0</tseg1>
@@ -2261,7 +2651,7 @@
       <SerialNumber>6A9FEBF84265552FBFF</SerialNumber>
     </activeCanInterfase>
     <activeCanInterfase>
-      <channel_active>false</channel_active>
+      <channel_active>true</channel_active>
       <hw_channel>0</hw_channel>
       <application_channel>0</application_channel>
       <can_bus_speed>500000</can_bus_speed>
@@ -2271,7 +2661,7 @@
       <acknowledge>false</acknowledge>
       <canspeedconstants>0</canspeedconstants>
       <driverchannel>0</driverchannel>
-      <instancename>UnAssigned</instancename>
+      <instancename>Kvaser Eagle (Channel 0 )</instancename>
       <silent>false</silent>
       <nosamp>0</nosamp>
       <sjw>0</sjw>
@@ -2281,13 +2671,13 @@
       <enableerrorframe>false</enableerrorframe>
       <outputcontrol>
       </outputcontrol>
-      <vendorName>UnAssigned</vendorName>
+      <vendorName>Kvaser</vendorName>
       <LogFileName>
       </LogFileName>
       <cardnumber>0</cardnumber>
       <channelnumberoncard>0</channelnumberoncard>
       <synkmode>0</synkmode>
-      <SerialNumber>0</SerialNumber>
+      <SerialNumber>1165</SerialNumber>
     </activeCanInterfase>
   </hardwareInterfases>
   <generalSettings xmlns="">
