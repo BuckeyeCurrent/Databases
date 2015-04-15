@@ -564,7 +564,7 @@ BO_ 354 CurrentTime: 8 IMU_MCN
 
 BO_ 356 GPS_Lat_Val: 8 IMU_MCN
  SG_ Latitude : 0|32@1- (1,0) [0|0] "" Vector__XXX
- SG_ PDOP : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ GPSvalid : 32|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 357 GPS_Long: 8 IMU_MCN
  SG_ Longitude : 0|32@1- (1,0) [0|0] "" Vector__XXX
