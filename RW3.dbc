@@ -237,7 +237,7 @@ BO_ 773 BIM1Stats1: 6 BIM1
 BO_ 774 BIM1Stats2: 5 BIM1
  SG_ BIM1AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM1StdDevVoltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM1CellsBalancing : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1BrickVoltage : 32|32@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 775 BIM2Stats1: 6 BIM2
  SG_ BIM2MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
@@ -248,7 +248,7 @@ BO_ 775 BIM2Stats1: 6 BIM2
 BO_ 776 BIM2Stats2: 5 BIM2
  SG_ BIM2AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM2StdDevVoltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM2CellsBalancing : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2BrickVoltage : 32|32@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 777 BIM3Stats1: 6 BIM3
  SG_ BIM3MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
@@ -259,7 +259,7 @@ BO_ 777 BIM3Stats1: 6 BIM3
 BO_ 778 BIM3Stats2: 5 BIM3
  SG_ BIM3AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM3StdDevVoltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM3CellsBalancing : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3BrickVoltage : 32|32@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 779 BIM4Stats1: 6 BIM4
  SG_ BIM4MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
@@ -270,7 +270,7 @@ BO_ 779 BIM4Stats1: 6 BIM4
 BO_ 780 BIM4Stats2: 5 BIM4
  SG_ BIM4AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM4StdDevVoltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM4CellsBalancing : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4BrickVoltage : 32|32@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 781 BIM5Stats1: 6 BIM5
  SG_ BIM5MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
@@ -281,7 +281,7 @@ BO_ 781 BIM5Stats1: 6 BIM5
 BO_ 782 BIM5Stats2: 5 BIM5
  SG_ BIM5AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM5StdDevVoltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM5CellsBalancing : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5BrickVoltage : 32|32@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 784 Cells1To4: 8 BIM1
  SG_ Cell1VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
@@ -526,29 +526,49 @@ BO_ 831 CellTemp20: 8 BIM5
  SG_ CellTemp40 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
 BO_ 832 BIM1Status: 6 BIM1
- SG_ BIM1SystemFlags : 0|32@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM1ShortHighStatuses : 32|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM1ShortLowStatuses : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1Init : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1SPIError : 33|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1BQ1Error : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1BQ2Error : 35|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1BQ3Error : 36|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1BQ4Error : 37|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1TempDisc : 38|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 833 BIM2Status: 6 BIM2
- SG_ BIM2SystemFlags : 0|32@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM2ShortHighStatuses : 32|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM2ShortLowStatuses : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2Init : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2SPIError : 33|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2BQ1Error : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2BQ2Error : 35|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2BQ3Error : 36|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2BQ4Error : 37|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2TempDisc : 38|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 834 BIM3Status: 6 BIM3
- SG_ BIM3SystemFlags : 0|32@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM3ShortHighStatuses : 32|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM3ShortLowStatuses : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3Init : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3SPIError : 33|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3BQ1Error : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3BQ2Error : 35|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3BQ3Error : 36|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3BQ4Error : 37|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3TempDisc : 38|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 835 BIM4Status: 6 BIM4
- SG_ BIM4SystemFlags : 0|32@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM4ShortHighStatuses : 32|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM4ShortLowStatuses : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4Init : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4SPIError : 33|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4BQ1Error : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4BQ2Error : 35|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4BQ3Error : 36|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4BQ4Error : 37|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4TempDisc : 38|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 836 BIM5Status: 6 BIM5
- SG_ BIM5SystemFlags : 0|32@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM5ShortHighStatuses : 32|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM5ShortLowStatuses : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5Init : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5SPIError : 33|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5BQ1Error : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5BQ2Error : 35|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5BQ3Error : 36|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5BQ4Error : 37|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5TempDisc : 38|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 355 GPS_Alt_Accur: 8 IMU_MCN
  SG_ Altitude : 32|32@1- (1,0) [0|0] "" Vector__XXX
