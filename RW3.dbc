@@ -159,7 +159,8 @@ BO_ 251 PowertrainCoolant: 8 Mid_MCN
  SG_ ControllerCoolantTemp : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
 BO_ 252 MotorAirPressures: 4 Mid_MCN
- SG_ MotorInletPressure : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ MotorAirPressure1 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ MotorAirPressure2 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
 BO_ 253 MotorPlateTemps: 8 Mid_MCN
  SG_ MotorPlateTemp1 : 0|32@1- (1,0) [0|0] "" Vector__XXX
@@ -674,7 +675,8 @@ SIG_VALTYPE_ 207 FrontUserFlags : 1;
 SIG_VALTYPE_ 250 CoolantFlow : 1;
 SIG_VALTYPE_ 251 MotorCoolantTemp : 1;
 SIG_VALTYPE_ 251 ControllerCoolantTemp : 1;
-SIG_VALTYPE_ 252 MotorInletPressure : 1;
+SIG_VALTYPE_ 252 MotorAirPressure1 : 1;
+SIG_VALTYPE_ 252 MotorAirPressure2 : 1;
 SIG_VALTYPE_ 253 MotorPlateTemp1 : 1;
 SIG_VALTYPE_ 253 MotorPlateTemp2 : 1;
 SIG_VALTYPE_ 254 StrainGauge1 : 1;
