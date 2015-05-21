@@ -1,0 +1,87 @@
+VERSION "HIPBNYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY/4/%%%/4/'%**4YYY///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+
+BS_:
+
+BU_:
+
+
+BO_ 1 ACD1: 8 Vector__XXX
+ SG_ ADC1 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 2 ACD2: 8 Vector__XXX
+ SG_ ADC2 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 3 ACD3: 8 Vector__XXX
+ SG_ ADC3 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 4 ACD4: 8 Vector__XXX
+ SG_ ADC4 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 5 ACD5: 8 Vector__XXX
+ SG_ ADC5 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 6 ACD6: 8 Vector__XXX
+ SG_ ADC6 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 7 ACD7: 8 Vector__XXX
+ SG_ ADC7 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 8 ACD8: 8 Vector__XXX
+ SG_ ADC8 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 9 ACD9: 8 Vector__XXX
+ SG_ ADC9 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 10 ACD10: 8 Vector__XXX
+ SG_ ADC10 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 11 ACD11: 8 Vector__XXX
+ SG_ ADC11 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 12 ACD12: 8 Vector__XXX
+ SG_ ADC12 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 13 GPIO1: 8 Vector__XXX
+ SG_ GPIO1 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 14 GPIO2: 8 Vector__XXX
+ SG_ GPIO2 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+
+SIG_VALTYPE_ 1 ADC1 : 1;
+SIG_VALTYPE_ 2 ADC2 : 1;
+SIG_VALTYPE_ 3 ADC3 : 1;
+SIG_VALTYPE_ 4 ADC4 : 1;
+SIG_VALTYPE_ 5 ADC5 : 1;
+SIG_VALTYPE_ 6 ADC6 : 1;
+SIG_VALTYPE_ 7 ADC7 : 1;
+SIG_VALTYPE_ 8 ADC8 : 1;
+SIG_VALTYPE_ 9 ADC9 : 1;
+SIG_VALTYPE_ 10 ADC10 : 1;
+SIG_VALTYPE_ 11 ADC11 : 1;
+SIG_VALTYPE_ 12 ADC12 : 1;
+SIG_VALTYPE_ 13 GPIO1 : 1;
+SIG_VALTYPE_ 14 GPIO2 : 1;
