@@ -593,6 +593,18 @@ BO_ 357 GPS_Long: 8 IMU_MCN
 BO_ 358 GPS_Speed: 8 IMU_MCN
  SG_ Speed : 0|32@1- (1,0) [0|0] "" Vector__XXX
 
+BO_ 49 CANMirrorHeartbeat: 8 Vector__XXX
+ SG_ mirror2toABufferLevel : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mirror2toABufferOverflows : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mirror2toAWriteTimeouts : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ canADown : 24|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mirror2toAFlags : 25|7@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mirrorAto2BuffeLevel : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mirrorAto2BufferOverflows : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mirrorAto2WriteTimeouts : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ can2Down : 56|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mirrorAto2Flags : 57|7@1+ (1,0) [0|0] "" Vector__XXX
+
 
 CM_ SG_ 1025 ActiveMotor "[0,10]";
 CM_ SG_ 100 Speed "[-10,10]";
