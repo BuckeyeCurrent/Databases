@@ -228,6 +228,7 @@ BO_ 483 DriveControlsLimits: 8 Rider_Controls
  SG_ RPMLimit : 2|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ ThrottleLock : 0|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ StatusLimit : 3|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MaxCellTemp : 8|32@1- (1,0) [0|0] "" Vector__XXX
 
 BO_ 773 BIM1Stats1: 6 BIM1
  SG_ BIM1MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
@@ -715,6 +716,7 @@ SIG_VALTYPE_ 353 IMUUserFlags : 1;
 SIG_VALTYPE_ 480 MotorRPMSetpoint : 1;
 SIG_VALTYPE_ 480 MotorCurrentSetpoint : 1;
 SIG_VALTYPE_ 481 BusCurrentSetpoint : 1;
+SIG_VALTYPE_ 483 MaxCellTemp : 1;
 SIG_VALTYPE_ 812 CellTemp1 : 1;
 SIG_VALTYPE_ 812 CellTemp2 : 1;
 SIG_VALTYPE_ 813 CellTemp3 : 1;
