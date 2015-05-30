@@ -216,7 +216,7 @@ BO_ 353 IMUMCNStatus: 8 IMU_MCN
  SG_ IMUSystemFlags : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ IMUUserFlags : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 480 MotorDriveCommand: 8 Rider_Controls
+BO_ 1281 MotorDriveCommand: 8 Rider_Controls
  SG_ MotorRPMSetpoint : 0|32@1- (1,0) [0|4000] "RPM" Vector__XXX
  SG_ MotorCurrentSetpoint : 32|32@1- (1,0) [0|1] "%" Vector__XXX
 
@@ -713,8 +713,8 @@ SIG_VALTYPE_ 352 Yaw : 1;
 SIG_VALTYPE_ 352 ZAccelerometer : 1;
 SIG_VALTYPE_ 353 IMUSystemFlags : 1;
 SIG_VALTYPE_ 353 IMUUserFlags : 1;
-SIG_VALTYPE_ 480 MotorRPMSetpoint : 1;
-SIG_VALTYPE_ 480 MotorCurrentSetpoint : 1;
+SIG_VALTYPE_ 1281 MotorRPMSetpoint : 1;
+SIG_VALTYPE_ 1281 MotorCurrentSetpoint : 1;
 SIG_VALTYPE_ 481 BusCurrentSetpoint : 1;
 SIG_VALTYPE_ 483 MaxCellTemp : 1;
 SIG_VALTYPE_ 812 CellTemp1 : 1;
