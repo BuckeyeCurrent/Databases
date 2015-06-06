@@ -65,6 +65,7 @@ BO_ 1031 MotorBackEMF: 8 WS200
 
 BO_ 1032 WS200Rail15V: 8 WS200
  SG_ Supply15V : 32|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Reserved15V : 0|32@1- (1,0) [0|0] "" Vector__XXX
 
 BO_ 1033 WS200LowRail: 8 WS200
  SG_ Rail2V : 0|32@1- (1,0) [0|0] "" Vector__XXX
@@ -217,68 +218,77 @@ BO_ 353 IMUMCNStatus: 8 IMU_MCN
  SG_ IMUUserFlags : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
 BO_ 1281 MotorDriveCommand: 8 Rider_Controls
- SG_ MotorRPMSetpoint : 0|32@1- (1,0) [0|4000] "RPM" Vector__XXX
- SG_ MotorCurrentSetpoint : 32|32@1- (1,0) [0|1] "%" Vector__XXX
+ SG_ MotorRPMSetpoint : 0|32@1- (1,0) [0|4000] "" Vector__XXX
+ SG_ MotorCurrentSetpoint : 32|32@1- (1,0) [0|1] "" Vector__XXX
 
 BO_ 481 MotorPowerCommand: 8 Rider_Controls
  SG_ BusCurrentSetpoint : 32|32@1- (1,0) [0|1] "%" Vector__XXX
 
-BO_ 483 DriveControlsLimits: 8 Rider_Controls
+BO_ 483 DriveControlsLimits: 5 Rider_Controls
  SG_ BatteryLimit : 1|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ RPMLimit : 2|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ ThrottleLock : 0|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ StatusLimit : 3|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ MaxCellTemp : 8|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ NewSignal6 : 4|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NewSignal7 : 5|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NewSignal8 : 6|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NewSignal9 : 7|1@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 773 BIM1Stats1: 6 BIM1
+BO_ 773 BIM1Stats1: 7 BIM1
  SG_ BIM1MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM1MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM1MinCellVoltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM1MinCellNumber : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1Stat1reserve : 24|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 774 BIM1Stats2: 5 BIM1
  SG_ BIM1AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM1StdDevVoltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM1BrickVoltage : 32|32@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 775 BIM2Stats1: 6 BIM2
+BO_ 775 BIM2Stats1: 7 BIM2
  SG_ BIM2MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM2MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM2MinCellVoltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM2MinCellNumber : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2Stat1reserve : 24|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 776 BIM2Stats2: 5 BIM2
  SG_ BIM2AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM2StdDevVoltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM2BrickVoltage : 32|32@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 777 BIM3Stats1: 6 BIM3
+BO_ 777 BIM3Stats1: 7 BIM3
  SG_ BIM3MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM3MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM3MinCellVoltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM3MinCellNumber : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3Stat1reserve : 24|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 778 BIM3Stats2: 5 BIM3
  SG_ BIM3AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM3StdDevVoltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM3BrickVoltage : 32|32@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 779 BIM4Stats1: 6 BIM4
+BO_ 779 BIM4Stats1: 7 BIM4
  SG_ BIM4MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM4MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM4MinCellVoltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM4MinCellNumber : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4Stat1reserve : 24|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 780 BIM4Stats2: 5 BIM4
  SG_ BIM4AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM4StdDevVoltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM4BrickVoltage : 32|32@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 781 BIM5Stats1: 6 BIM5
+BO_ 781 BIM5Stats1: 7 BIM5
  SG_ BIM5MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM5MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM5MinCellVoltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM5MinCellNumber : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5Stat1reserve : 24|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 782 BIM5Stats2: 5 BIM5
  SG_ BIM5AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
@@ -576,7 +586,7 @@ BO_ 355 GPS_Alt_Accur: 8 IMU_MCN
  SG_ Altitude : 32|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ PDOP : 0|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 354 CurrentTime: 8 IMU_MCN
+BO_ 354 CurrentTime: 7 IMU_MCN
  SG_ Year : 0|16@1- (1,0) [0|0] "" Vector__XXX
  SG_ Month : 16|8@1- (1,0) [0|0] "" Vector__XXX
  SG_ Day : 24|8@1- (1,0) [0|0] "" Vector__XXX
@@ -650,6 +660,7 @@ SIG_VALTYPE_ 1030 Id : 1;
 SIG_VALTYPE_ 1031 BEMFq : 1;
 SIG_VALTYPE_ 1031 BEMFd : 1;
 SIG_VALTYPE_ 1032 Supply15V : 1;
+SIG_VALTYPE_ 1032 Reserved15V : 1;
 SIG_VALTYPE_ 1033 Rail2V : 1;
 SIG_VALTYPE_ 1033 Rail3V : 1;
 SIG_VALTYPE_ 994 CoolantFlow : 1;
