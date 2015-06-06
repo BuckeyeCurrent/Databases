@@ -616,6 +616,9 @@ BO_ 49 CANMirrorHeartbeat: 8 Vector__XXX
  SG_ can2Down : 56|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ mirrorAto2Flags : 57|7@1+ (1,0) [0|0] "" Vector__XXX
 
+BO_ 1283 WS200Reset: 1 WS200
+ SG_ TritiumReset : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
 
 CM_ SG_ 1025 ActiveMotor "[0,10]";
 CM_ SG_ 100 Speed "[-10,10]";

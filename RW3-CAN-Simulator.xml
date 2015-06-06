@@ -14,7 +14,7 @@
     <m_configfileversion>2</m_configfileversion>
     <m_cantracewmversion>
     </m_cantracewmversion>
-    <m_lastdayedited>4/1/2015 12:58:41 AM</m_lastdayedited>
+    <m_lastdayedited>6/5/2015 9:03:59 PM</m_lastdayedited>
   </xmlInformation>
   <cantraceDatabase xmlns="">
     <associateDatabase>
@@ -2661,7 +2661,7 @@
       <acknowledge>false</acknowledge>
       <canspeedconstants>0</canspeedconstants>
       <driverchannel>0</driverchannel>
-      <instancename>Kvaser Eagle (Channel 0 )</instancename>
+      <instancename>Kvaser Memorator (Channel 0 )</instancename>
       <silent>false</silent>
       <nosamp>0</nosamp>
       <sjw>0</sjw>
@@ -2677,7 +2677,7 @@
       <cardnumber>0</cardnumber>
       <channelnumberoncard>0</channelnumberoncard>
       <synkmode>0</synkmode>
-      <SerialNumber>1165</SerialNumber>
+      <SerialNumber>2130</SerialNumber>
     </activeCanInterfase>
   </hardwareInterfases>
   <generalSettings xmlns="">
