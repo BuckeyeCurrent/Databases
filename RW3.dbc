@@ -596,13 +596,15 @@ BO_ 354 CurrentTime: 7 IMU_MCN
 
 BO_ 356 GPS_Lat_Val: 8 IMU_MCN
  SG_ Latitude : 0|32@1- (1,0) [0|0] "" Vector__XXX
- SG_ GPSvalid : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ GPSvalid : 32|32@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 357 GPS_Long: 8 IMU_MCN
  SG_ Longitude : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ LongReserv : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
 BO_ 358 GPS_Speed: 8 IMU_MCN
  SG_ Speed : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ SpeedReserv : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
 BO_ 49 CANMirrorHeartbeat: 8 Vector__XXX
  SG_ mirror2toABufferLevel : 0|8@1+ (1,0) [0|0] "" Vector__XXX
@@ -618,6 +620,9 @@ BO_ 49 CANMirrorHeartbeat: 8 Vector__XXX
 
 BO_ 1283 WS200Reset: 1 WS200
  SG_ TritiumReset : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1284 Supply12vMsg: 4 Vector__XXX
+ SG_ Supply12v : 0|32@1- (1,0) [0|0] "" Vector__XXX
 
 
 CM_ SG_ 1025 ActiveMotor "[0,10]";
@@ -775,4 +780,7 @@ SIG_VALTYPE_ 355 Altitude : 1;
 SIG_VALTYPE_ 355 PDOP : 1;
 SIG_VALTYPE_ 356 Latitude : 1;
 SIG_VALTYPE_ 357 Longitude : 1;
+SIG_VALTYPE_ 357 LongReserv : 1;
 SIG_VALTYPE_ 358 Speed : 1;
+SIG_VALTYPE_ 358 SpeedReserv : 1;
+SIG_VALTYPE_ 1284 Supply12v : 1;
