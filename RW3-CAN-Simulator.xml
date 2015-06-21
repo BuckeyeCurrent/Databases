@@ -14,7 +14,7 @@
     <m_configfileversion>2</m_configfileversion>
     <m_cantracewmversion>
     </m_cantracewmversion>
-    <m_lastdayedited>6/5/2015 9:03:59 PM</m_lastdayedited>
+    <m_lastdayedited>6/20/2015 10:37:06 PM</m_lastdayedited>
   </xmlInformation>
   <cantraceDatabase xmlns="">
     <associateDatabase>
@@ -333,7 +333,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -358,7 +358,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -383,7 +383,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -408,7 +408,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -433,7 +433,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -458,7 +458,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -483,7 +483,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -508,7 +508,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -533,7 +533,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -558,7 +558,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -583,7 +583,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -608,7 +608,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -633,7 +633,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -658,7 +658,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -683,7 +683,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -708,7 +708,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -733,7 +733,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -758,7 +758,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -783,7 +783,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -808,7 +808,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -833,7 +833,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -858,7 +858,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -883,7 +883,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -908,7 +908,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -933,7 +933,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -958,7 +958,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -983,7 +983,7 @@
       <rtr>true</rtr>
       <cyclic>false</cyclic>
       <burst>1</burst>
-      <intervall>0</intervall>
+      <intervall>1000</intervall>
       <comment>RTR</comment>
       <txrx>
       </txrx>
@@ -1673,8 +1673,8 @@
       <data>
         <data_0>0</data_0>
         <data_1>0</data_1>
-        <data_2>0</data_2>
-        <data_3>0</data_3>
+        <data_2>108</data_2>
+        <data_3>66</data_3>
         <data_4>0</data_4>
         <data_5>0</data_5>
         <data_6>0</data_6>
@@ -2661,7 +2661,7 @@
       <acknowledge>false</acknowledge>
       <canspeedconstants>0</canspeedconstants>
       <driverchannel>0</driverchannel>
-      <instancename>Kvaser Memorator (Channel 0 )</instancename>
+      <instancename>Kvaser Eagle (Channel 0 )</instancename>
       <silent>false</silent>
       <nosamp>0</nosamp>
       <sjw>0</sjw>
@@ -2677,7 +2677,7 @@
       <cardnumber>0</cardnumber>
       <channelnumberoncard>0</channelnumberoncard>
       <synkmode>0</synkmode>
-      <SerialNumber>2130</SerialNumber>
+      <SerialNumber>1165</SerialNumber>
     </activeCanInterfase>
   </hardwareInterfases>
   <generalSettings xmlns="">
