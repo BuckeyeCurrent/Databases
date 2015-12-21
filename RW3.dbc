@@ -33,11 +33,24 @@ BO_ 1024 WS200IDInfo: 8 WS200
  SG_ SerialNumber : 32|32@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 1025 WS200Status: 8 WS200
- SG_ LimitFlags : 0|16@1+ (1,0) [0|0] "" Vector__XXX
- SG_ ErrorFlags : 16|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ ActiveMotor : 32|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ TransmitErrorCount : 48|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ ReceiveErrorCount : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HOCError : 16|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SOCError : 17|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DCBusOverLimit : 18|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MotorPositionError : 19|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Watchdog : 20|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ConfigError : 21|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ UVLOError : 22|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DesaturationFault : 23|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ OutputVoltageLimit : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MotorCurrentLimit : 1|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VelocityLimit : 2|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BusCurrentLimit : 3|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BusVoltageUpperLimit : 4|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BusVoltageLowerLimit : 5|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MotorTempLimit : 6|1@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 1026 WS200BusMeasurement: 8 WS200
  SG_ BusVoltage : 0|32@1- (1,0) [0|0] "" Vector__XXX
@@ -624,6 +637,9 @@ BO_ 1283 WS200Reset: 1 WS200
 BO_ 1284 Supply12vMsg: 4 Vector__XXX
  SG_ Supply12v : 0|32@1- (1,0) [0|0] "" Vector__XXX
 
+BO_ 484 DriveControlsThrottle: 8 Vector__XXX
+ SG_ RawThrottle : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
 
 CM_ SG_ 1025 ActiveMotor "[0,10]";
 CM_ SG_ 100 Speed "[-10,10]";
@@ -784,3 +800,4 @@ SIG_VALTYPE_ 357 LongReserv : 1;
 SIG_VALTYPE_ 358 Speed : 1;
 SIG_VALTYPE_ 358 SpeedReserv : 1;
 SIG_VALTYPE_ 1284 Supply12v : 1;
+SIG_VALTYPE_ 484 RawThrottle : 1;
