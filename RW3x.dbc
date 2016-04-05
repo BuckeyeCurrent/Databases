@@ -25,7 +25,7 @@ NS_ :
 
 BS_:
 
-BU_: WS200 MCN_Powertrain Front_MCN Mid_MCN Rear_MCN IMU_MCN BIM1 BIM2 BIM3 BIM4 Computer BIM5 Rider_Controls GPS MCN1 MCN2 MCN3 Drive_Controls BIM6
+BU_: WS200 MCN_Powertrain Front_MCN Mid_MCN Rear_MCN IMU_MCN BIM1 BIM2 BIM3 BIM4 Computer BIM5 Rider_Controls GPS MCN1 MCN2 MCN3 Drive_Controls BIM6 BoschABS
 
 
 BO_ 1024 WS200IDInfo: 8 WS200
@@ -168,243 +168,239 @@ BO_ 759 BIM5Stats2: 5 BIM5
  SG_ BIM5StdDevVoltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM5NumOfBalancingCells : 32|8@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 783 Cells1To4: 8 BIM1
- SG_ Cell1VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell2VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell3VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell4VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 783 BIM1Cells1To4: 8 BIM1
+ SG_ Cell1Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell2Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell3Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell4Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 784 Cells5To8: 8 BIM1
- SG_ Cell5VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell6VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell7VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell8VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 784 BIM1Cells5To8: 8 BIM1
+ SG_ Cell5Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell6Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell7Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell8Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 785 Cells9To12: 8 BIM1
- SG_ Cell9VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell10VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell11VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell12VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 785 BIM1Cells9To12: 8 BIM1
+ SG_ Cell9Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell10Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell11Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell12Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 786 Cells13To16: 8 BIM1
- SG_ Cell13VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell14VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell15VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell16VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 786 BIM1Cells13To16: 8 BIM1
+ SG_ Cell13Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell14Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell15Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell16Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 787 Cells17To20: 8 BIM1
- SG_ Cell17VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell18VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell19VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell20VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 787 BIM1Cells17To20: 8 BIM1
+ SG_ Cell17Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell18Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell19Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell20Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 788 Cells21To24: 8 BIM1
- SG_ Cell21VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell22VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell23VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell24VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 788 BIM1Cells21To24: 8 BIM1
+ SG_ Cell21Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell22Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell23Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell24Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 789 Cells25To28: 8 BIM2
- SG_ Cell25VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell26VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell27VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell28VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 789 BIM2Cells25To28: 8 BIM2
+ SG_ Cell25Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell26Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell27Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell28Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 790 Cells29To32: 8 BIM2
- SG_ Cell29VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell30VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell31VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell32VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 790 BIM2Cells29To32: 8 BIM2
+ SG_ Cell29Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell30Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell31Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell32Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 791 Cells33To36: 8 BIM2
- SG_ Cell33VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell34VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell35VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell36VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 791 BIM2Cells33To36: 8 BIM2
+ SG_ Cell33Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell34Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell35Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell36Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 792 Cells37To40: 8 BIM2
- SG_ Cell37VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell38VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell39VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell40VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 792 BIM2Cells37To40: 8 BIM2
+ SG_ Cell37Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell38Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell39Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell40Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 793 Cells41To44: 8 BIM2
- SG_ Cell41VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell42VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell43VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell44VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 793 BIM2Cells41To44: 8 BIM2
+ SG_ Cell41Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell42Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell43Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell44Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 794 Cells45To46: 4 BIM2
- SG_ Cell45VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell46VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 794 BIM2Cells45To46: 4 BIM2
+ SG_ Cell45Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell46Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 795 Cells47To50: 8 BIM3
- SG_ Cell49VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell50VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell51VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell52VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 795 BIM3Cells47To50: 8 BIM3
+ SG_ Cell47Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell48Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell49Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell50Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 796 Cells51To54: 8 BIM3
- SG_ Cell53VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell54VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell55VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell56VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 796 BIM3Cells51To54: 8 BIM3
+ SG_ Cell51Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell52Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell53Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell54Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 797 Cells55To58: 8 BIM3
- SG_ Cell57VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell58VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell59VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell60VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 797 BIM3Cells55To58: 8 BIM3
+ SG_ Cell55Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell56Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell57Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell58Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 798 Cells59To62: 8 BIM3
- SG_ Cell61VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell62VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell63VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell64VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 798 BIM3Cells59To62: 8 BIM3
+ SG_ Cell59Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell60Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell61Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell62Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 799 Cells63To66: 8 BIM3
- SG_ Cell65VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell66VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell67VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell68VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 799 BIM3Cells63To66: 8 BIM3
+ SG_ Cell63Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell64Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell65Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell66Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 800 Cells67To70: 8 BIM3
- SG_ Cell69VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell70VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell71VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell72VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 800 BIM3Cells67To70: 8 BIM3
+ SG_ Cell67Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell68Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell69Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell70Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 801 Cells71To74: 8 BIM4
- SG_ Cell73VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell74VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell75VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell76VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 801 BIM4Cells71To74: 8 BIM4
+ SG_ Cell71Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell72Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell73Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell74Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 802 Cells75To78: 8 BIM4
- SG_ Cell77VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell78VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell79VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell80VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 802 BIM4Cells75To78: 8 BIM4
+ SG_ Cell75Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell76Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell77Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell78Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 803 Cells79To82: 8 BIM4
- SG_ Cell81VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell82VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell83VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell84VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 803 BIM4Cells79To82: 8 BIM4
+ SG_ Cell79Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell80Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell81Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell82Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 804 Cells83To86: 8 BIM4
- SG_ Cell85VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell86VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell87VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell88VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 804 BIM4Cells83To86: 8 BIM4
+ SG_ Cell83Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell84Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell85Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell86Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 805 Cells87To90: 8 BIM4
- SG_ Cell89VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell90VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell91VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell92VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 805 BIM4Cells87To90: 8 BIM4
+ SG_ Cell87Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell88Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell89Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell90Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 806 Cells91To94: 8 BIM4
- SG_ Cell93VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell94VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell95VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell96VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 806 BIM4Cells91To94: 8 BIM4
+ SG_ Cell91Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell92Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell93Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell94Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 807 Cells95To98: 8 BIM5
- SG_ Cell97VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell98VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell99VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell100VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 807 BIM5Cells95To98: 8 BIM5
+ SG_ Cell95Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell96Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell97Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell98Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 808 Cells99To102: 8 BIM5
- SG_ Cell101VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell102VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell103VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell104VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 808 BIM5Cells99To102: 8 BIM5
+ SG_ Cell99Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell100Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell101Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell102Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 809 Cells103To106: 8 BIM5
- SG_ Cell105VoltageAndState : 0|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell106VoltageAndState : 16|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell107VoltageAndState : 32|16@1- (1,0) [0|0] "" Vector__XXX
- SG_ Cell108VoltageAndState : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 809 BIM5Cells103To106: 8 BIM5
+ SG_ Cell103Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell104Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell105Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell106Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 825 CellTemp1: 8 BIM1
- SG_ CellTemp1 : 0|32@1- (1,0) [0|0] "" Vector__XXX
- SG_ CellTemp2 : 32|32@1- (1,0) [0|0] "" Vector__XXX
-
-BO_ 826 CellTemp2: 8 BIM1
+BO_ 826 BIM1Temps2: 8 BIM1
  SG_ CellTemp3 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp4 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 827 CellTemp3: 8 BIM1
+BO_ 827 BIM1Temps3: 8 BIM1
  SG_ CellTemp5 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp6 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 828 CellTemp4: 8 BIM1
+BO_ 828 BIM1Temps4: 8 BIM1
  SG_ CellTemp7 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp8 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 829 CellTemp5: 8 BIM2
+BO_ 829 BIM2Temps1: 8 BIM2
  SG_ CellTemp9 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp10 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 830 CellTemp6: 8 BIM2
+BO_ 830 BIM2Temps2: 8 BIM2
  SG_ CellTemp11 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp12 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 831 CellTemp7: 8 BIM2
+BO_ 831 BIM2Temps3: 8 BIM2
  SG_ CellTemp13 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp14 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 832 CellTemp8: 8 BIM2
+BO_ 832 BIM2Temps4: 8 BIM2
  SG_ CellTemp15 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp16 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 833 CellTemp9: 8 BIM3
+BO_ 833 BIM3Temps1: 8 BIM3
  SG_ CellTemp17 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp18 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 834 CellTemp10: 8 BIM3
+BO_ 834 BIM3Temps2: 8 BIM3
  SG_ CellTemp19 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp20 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 835 CellTemp11: 8 BIM3
+BO_ 835 BIM3Temps3: 8 BIM3
  SG_ CellTemp21 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp22 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 836 CellTemp12: 8 BIM3
+BO_ 836 BIM3Temps4: 8 BIM3
  SG_ CellTemp23 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp24 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 837 CellTemp13: 8 BIM4
+BO_ 837 BIM4Temps1: 8 BIM4
  SG_ CellTemp25 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp26 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 838 CellTemp14: 8 BIM4
+BO_ 838 BIM4Temps2: 8 BIM4
  SG_ CellTemp27 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp28 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 839 CellTemp15: 8 BIM4
+BO_ 839 BIM4Temps3: 8 BIM4
  SG_ CellTemp29 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp30 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 840 CellTemp16: 8 BIM4
+BO_ 840 BIM4Temps4: 8 BIM4
  SG_ CellTemp31 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp32 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 841 CellTemp17: 8 BIM5
+BO_ 841 BIM5Temps1: 8 BIM5
  SG_ CellTemp33 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp34 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 842 CellTemp18: 8 BIM5
+BO_ 842 BIM5Temps2: 8 BIM5
  SG_ CellTemp35 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp36 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 843 CellTemp19: 8 BIM5
+BO_ 843 BIM5Temps3: 8 BIM5
  SG_ CellTemp37 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp38 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 844 CellTemp20: 8 BIM5
+BO_ 844 BIM5Temps4: 8 BIM5
  SG_ CellTemp39 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ CellTemp40 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
@@ -516,19 +512,47 @@ BO_ 761 BIM6Stats2: 5 BIM6
  SG_ BIM6NumOfBalancingCells : 32|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM6StdDevVoltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 810 Cells107To110: 8 BIM6
+BO_ 810 BIM5Cells107To110: 8 BIM5
+ SG_ Cell107Voltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell108Voltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell109Voltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell110Voltage : 48|16@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 811 Cells111To114: 8 BIM6
+BO_ 811 BIM5Cells111To114: 8 BIM5
+ SG_ Cell112Voltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell113Voltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell114Voltage : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell111Voltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 812 Cells115To118: 8 BIM6
+BO_ 812 BIM5Cells115To118: 8 BIM5
+ SG_ Cell115Voltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell116Voltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell117Voltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell118Voltage : 48|16@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 813 Cells119To122: 8 BIM6
+BO_ 813 BIM6Cells119To122: 8 BIM6
+ SG_ Cell119Voltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell120Voltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell121Voltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell122Voltage : 48|16@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 814 Cells123To126: 8 BIM6
+BO_ 814 BIM6Cells123To126: 8 BIM6
+ SG_ Cell123Voltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell124Voltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell125Voltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell126Voltage : 48|16@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 815 Cells127To130: 8 BIM6
+BO_ 815 BIM6Cells127To130: 8 BIM6
+ SG_ Cell127Voltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell128Voltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell129Voltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell130Voltage : 48|16@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 816 Cells131To134: 8 BIM6
+BO_ 816 BIM6Cells131To134: 8 BIM6
+ SG_ Cell131Voltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell132Voltage : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell133Voltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cell134Voltage : 48|16@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 859 BIM6Status: 6 BIM6
  SG_ StatusShortHigh : 32|8@1+ (1,0) [0|0] "" Vector__XXX
@@ -552,7 +576,7 @@ BO_ 847 BIM6Temps3: 8 BIM6
  SG_ Temperature45 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ Temperature46 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 848 BIM6Temps4: 8 Drive_Controls
+BO_ 848 BIM6Temps4: 8 BIM6
  SG_ Temperature47 : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ Temperature48 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
@@ -569,6 +593,17 @@ BO_ 865 BIM5Command: 8 BIM5
 BO_ 866 BIM6Command: 8 BIM6
 
 BO_ 1034 WS200Reserved: 8 WS200
+
+BO_ 485 RawThrottleInput: 4 Drive_Controls
+ SG_ RawThrottleInput : 0|32@1- (1,0) [0|1] "" Vector__XXX
+
+BO_ 500 FrontWheel: 4 BoschABS
+
+BO_ 501 FrontBrake: 4 BoschABS
+
+BO_ 825 BIM1Temps1: 8 BIM1
+ SG_ Temperature1 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Temperature2 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
 
 CM_ SG_ 1025 ActiveMotor "[0,10]";
@@ -599,11 +634,10 @@ CM_ BO_ 806 "RTR";
 CM_ BO_ 807 "RTR";
 CM_ BO_ 808 "RTR";
 CM_ BO_ 809 "RTR";
-CM_ BO_ 825 "RTR";
-CM_ BO_ 826 "RTR";
-CM_ BO_ 827 "RTR";
-CM_ BO_ 828 "RTR";
-CM_ BO_ 829 "RTR";
+CM_ BO_ 826 "";
+CM_ BO_ 827 "";
+CM_ BO_ 828 "";
+CM_ BO_ 829 "";
 CM_ BO_ 555 "RTR";
 CM_ BO_ 601 "";
 CM_ BO_ 605 "RTR";
@@ -655,8 +689,6 @@ SIG_VALTYPE_ 552 AmbientPressure : 1;
 SIG_VALTYPE_ 484 MotorRPMSetpoint : 1;
 SIG_VALTYPE_ 484 MotorCurrentSetpoint : 1;
 SIG_VALTYPE_ 483 MaxCellTemp : 1;
-SIG_VALTYPE_ 825 CellTemp1 : 1;
-SIG_VALTYPE_ 825 CellTemp2 : 1;
 SIG_VALTYPE_ 826 CellTemp3 : 1;
 SIG_VALTYPE_ 826 CellTemp4 : 1;
 SIG_VALTYPE_ 827 CellTemp5 : 1;
@@ -732,3 +764,6 @@ SIG_VALTYPE_ 847 Temperature45 : 1;
 SIG_VALTYPE_ 847 Temperature46 : 1;
 SIG_VALTYPE_ 848 Temperature47 : 1;
 SIG_VALTYPE_ 848 Temperature48 : 1;
+SIG_VALTYPE_ 485 RawThrottleInput : 1;
+SIG_VALTYPE_ 825 Temperature1 : 1;
+SIG_VALTYPE_ 825 Temperature2 : 1;
