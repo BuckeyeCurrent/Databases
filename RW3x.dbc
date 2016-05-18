@@ -103,10 +103,10 @@ BO_ 484 MotorDriveCommand: 8 Drive_Controls
  SG_ MotorCurrentSetpoint : 32|32@1- (1,0) [0|1] "" Vector__XXX
 
 BO_ 483 DriveControlsLimits: 5 Drive_Controls
- SG_ BatteryLimit : 1|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ RPMLimit : 2|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ ThrottleLock : 0|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ StatusLimit : 3|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CellTempLimit : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TimeoutError : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ThrottleEnabled : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ StackError : 3|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ MaxCellTemp : 8|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ BufferBit : 4|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BufferBit2 : 5|1@1+ (1,0) [0|0] "" Vector__XXX
@@ -116,8 +116,9 @@ BO_ 483 DriveControlsLimits: 5 Drive_Controls
 BO_ 750 BIM1Stats1: 6 BIM1
  SG_ BIM1MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM1MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM1MinCellVoltage : 24|16@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM1MinCellNumber : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1MinCellVoltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1MinCellNumber : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1Stat1reserve : 24|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 751 BIM1Stats2: 5 BIM1
  SG_ BIM1AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
@@ -127,8 +128,9 @@ BO_ 751 BIM1Stats2: 5 BIM1
 BO_ 752 BIM2Stats1: 6 BIM2
  SG_ BIM2MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM2MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM2MinCellVoltage : 24|16@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM2MinCellNumber : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2MinCellVoltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2MinCellNumber : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2Stat1reserve : 24|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 753 BIM2Stats2: 5 BIM2
  SG_ BIM2AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
@@ -138,8 +140,9 @@ BO_ 753 BIM2Stats2: 5 BIM2
 BO_ 754 BIM3Stats1: 6 BIM3
  SG_ BIM3MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM3MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM3MinCellVoltage : 24|16@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM3MinCellNumber : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3MinCellVoltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3MinCellNumber : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3Stat1reserve : 24|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 755 BIM3Stats2: 5 BIM3
  SG_ BIM3AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
@@ -149,8 +152,9 @@ BO_ 755 BIM3Stats2: 5 BIM3
 BO_ 756 BIM4Stats1: 6 BIM4
  SG_ BIM4MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM4MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM4MinCellVoltage : 24|16@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM4MinCellNumber : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4MinCellVoltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4MinCellNumber : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4Stat1reserve : 24|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 757 BIM4Stats2: 5 BIM4
  SG_ BIM4AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
@@ -160,8 +164,9 @@ BO_ 757 BIM4Stats2: 5 BIM4
 BO_ 758 BIM5Stats1: 6 BIM5
  SG_ BIM5MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM5MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM5MinCellVoltage : 24|16@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM5MinCellNumber : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5MinCellVoltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5MinCellNumber : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5Stat1reserve : 24|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 759 BIM5Stats2: 5 BIM5
  SG_ BIM5AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
@@ -405,24 +410,44 @@ BO_ 844 BIM5Temps4: 8 BIM5
  SG_ CellTemp40 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
 BO_ 854 BIM1Status: 6 BIM1
- SG_ SystemFlags : 0|32@1- (1,0) [0|0] "" Vector__XXX
- SG_ StatusShortHigh : 32|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ StatusShortLow : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1BQ1Error : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1BQ2Error : 35|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1BQ3Error : 36|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1BQ4Error : 37|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1Init : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1SPIError : 33|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM1TempDisc : 38|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SystemFlags : 0|32@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 855 BIM2Status: 6 BIM2
- SG_ StatusShortHigh : 32|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ StatusShortLow : 40|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ SystemFlags : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2BQ1Error : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2BQ2Error : 35|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2BQ3Error : 36|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2BQ4Error : 37|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2Init : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2SPIError : 33|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM2TempDisc : 38|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SystemFlags : 0|32@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 857 BIM4Status: 6 BIM4
- SG_ SystemFlags : 0|32@1- (1,0) [0|0] "" Vector__XXX
- SG_ StatusShortHigh : 32|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ StatusShortLow : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4BQ1Error : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4BQ2Error : 35|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4BQ3Error : 36|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4BQ4Error : 37|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4Init : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4SPIError : 33|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM4TempDisc : 38|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SystemFlags : 0|32@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 858 BIM5Status: 6 BIM5
- SG_ StatusShortHigh : 32|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ StatusShortLow : 40|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ SystemFlags : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5BQ1Error : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5BQ2Error : 35|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5BQ3Error : 36|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5BQ4Error : 37|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5Init : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5SPIError : 33|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM5TempDisc : 38|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 701 GPS_Time: 5 GPS
  SG_ Hours : 0|8@1+ (1,0) [0|0] "" Vector__XXX
@@ -504,8 +529,9 @@ BO_ 654 MCN3Command: 0 MCN3
 BO_ 760 BIM6Stats1: 6 BIM6
  SG_ BIM6MaxCellNumber : 16|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ BIM6MaxCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM6MinCellNumber : 40|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ BIM6MinCellVoltage : 24|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM6MinCellNumber : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM6MinCellVoltage : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM6Stat1reserve : 24|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 761 BIM6Stats2: 5 BIM6
  SG_ BIM6AvgCellVoltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
@@ -555,14 +581,24 @@ BO_ 816 BIM6Cells131To134: 8 BIM6
  SG_ Cell134Voltage : 48|16@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 859 BIM6Status: 6 BIM6
- SG_ StatusShortHigh : 32|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ StatusShortLow : 40|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ SystemFlags : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ BIM6BQ1Error : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM6BQ2Error : 35|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM6BQ3Error : 36|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM6BQ4Error : 37|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM6Init : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM6SPIError : 33|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM6TempDisc : 38|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 856 BIM3Status: 6 BIM3
- SG_ StatusShortHigh : 32|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ StatusShortLow : 40|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ SystemFlags : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3BQ1Error : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3BQ2Error : 35|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3BQ3Error : 36|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3BQ4Error : 37|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3Init : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3SPIError : 33|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BIM3TempDisc : 38|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SystemFlags : 0|32@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 845 BIM6Temps1: 8 BIM6
  SG_ Temperature41 : 0|32@1- (1,0) [0|0] "" Vector__XXX
@@ -727,9 +763,6 @@ SIG_VALTYPE_ 843 CellTemp37 : 1;
 SIG_VALTYPE_ 843 CellTemp38 : 1;
 SIG_VALTYPE_ 844 CellTemp39 : 1;
 SIG_VALTYPE_ 844 CellTemp40 : 1;
-SIG_VALTYPE_ 854 SystemFlags : 1;
-SIG_VALTYPE_ 855 SystemFlags : 1;
-SIG_VALTYPE_ 857 SystemFlags : 1;
 SIG_VALTYPE_ 858 SystemFlags : 1;
 SIG_VALTYPE_ 702 Longitude : 1;
 SIG_VALTYPE_ 706 Speed : 1;
@@ -755,7 +788,6 @@ SIG_VALTYPE_ 651 FlexSensor2 : 1;
 SIG_VALTYPE_ 652 FlexSensor3 : 1;
 SIG_VALTYPE_ 653 SystemFlags : 1;
 SIG_VALTYPE_ 859 SystemFlags : 1;
-SIG_VALTYPE_ 856 SystemFlags : 1;
 SIG_VALTYPE_ 845 Temperature41 : 1;
 SIG_VALTYPE_ 845 Temperature42 : 1;
 SIG_VALTYPE_ 846 Temperature43 : 1;
