@@ -25,7 +25,7 @@ NS_ :
 
 BS_:
 
-BU_: WS200 MCN_Powertrain Front_MCN Mid_MCN Rear_MCN IMU_MCN BIM1 BIM2 BIM3 BIM4 Computer BIM5 Rider_Controls GPS MCN1 MCN2 MCN3 Drive_Controls BIM6 BoschABS
+BU_: WS200 MCN_Powertrain Front_MCN Mid_MCN Rear_MCN IMU_MCN BIM1 BIM2 BIM3 BIM4 Computer BIM5 Rider_Controls GPS MCN1 MCN2 MCN3 Drive_Controls BIM6 BoschABS IMU
 
 
 BO_ 1024 WS200IDInfo: 8 WS200
@@ -98,7 +98,7 @@ BO_ 552 AmbientMeasurements: 8 MCN1
  SG_ AmbientTemp : 0|32@1- (1,0) [0|0] "" Vector__XXX
  SG_ AmbientPressure : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
-BO_ 484 MotorDriveCommand: 8 Drive_Controls
+BO_ 1281 MotorDriveCommand: 8 Drive_Controls
  SG_ MotorRPMSetpoint : 0|32@1- (1,0) [0|4000] "" Vector__XXX
  SG_ MotorCurrentSetpoint : 32|32@1- (1,0) [0|1] "" Vector__XXX
 
@@ -242,6 +242,8 @@ BO_ 793 BIM2Cells41To44: 8 BIM2
 BO_ 794 BIM2Cells45To46: 4 BIM2
  SG_ Cell45Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
  SG_ Cell46Voltage : 16|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell47Voltage : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Cell48Voltage : 48|16@1- (1,0) [0|0] "" Vector__XXX
 
 BO_ 795 BIM3Cells47To50: 8 BIM3
  SG_ Cell47Voltage : 0|16@1- (1,0) [0|0] "" Vector__XXX
@@ -601,20 +603,20 @@ BO_ 856 BIM3Status: 6 BIM3
  SG_ SystemFlags : 0|32@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 845 BIM6Temps1: 8 BIM6
- SG_ Temperature41 : 0|32@1- (1,0) [0|0] "" Vector__XXX
- SG_ Temperature42 : 32|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp41 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp42 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
 BO_ 846 BIM6Temps2: 8 BIM6
- SG_ Temperature43 : 0|32@1- (1,0) [0|0] "" Vector__XXX
- SG_ Temperature44 : 32|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp43 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp44 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
 BO_ 847 BIM6Temps3: 8 BIM6
- SG_ Temperature45 : 0|32@1- (1,0) [0|0] "" Vector__XXX
- SG_ Temperature46 : 32|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp45 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp46 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
 BO_ 848 BIM6Temps4: 8 BIM6
- SG_ Temperature47 : 0|32@1- (1,0) [0|0] "" Vector__XXX
- SG_ Temperature48 : 32|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp47 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp48 : 32|32@1- (1,0) [0|0] "" Vector__XXX
 
 BO_ 861 BIM1Command: 8 BIM1
 
@@ -638,8 +640,20 @@ BO_ 500 FrontWheel: 4 BoschABS
 BO_ 501 FrontBrake: 4 BoschABS
 
 BO_ 825 BIM1Temps1: 8 BIM1
- SG_ Temperature1 : 0|32@1- (1,0) [0|0] "" Vector__XXX
- SG_ Temperature2 : 32|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp1 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CellTemp2 : 32|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 372 IMUYaw: 8 IMU
+ SG_ YawRate : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ YawStat : 16|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AccY : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AccYStat : 48|8@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 376 IMURoll: 8 IMU
+ SG_ RollStat : 16|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AccX : 32|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AccXStat : 48|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ RollRate : 0|16@1- (1,0) [0|0] "" Vector__XXX
 
 
 CM_ SG_ 1025 ActiveMotor "[0,10]";
@@ -722,8 +736,8 @@ SIG_VALTYPE_ 1039 Reserved : 1;
 SIG_VALTYPE_ 551 SteeringAngle : 1;
 SIG_VALTYPE_ 552 AmbientTemp : 1;
 SIG_VALTYPE_ 552 AmbientPressure : 1;
-SIG_VALTYPE_ 484 MotorRPMSetpoint : 1;
-SIG_VALTYPE_ 484 MotorCurrentSetpoint : 1;
+SIG_VALTYPE_ 1281 MotorRPMSetpoint : 1;
+SIG_VALTYPE_ 1281 MotorCurrentSetpoint : 1;
 SIG_VALTYPE_ 483 MaxCellTemp : 1;
 SIG_VALTYPE_ 826 CellTemp3 : 1;
 SIG_VALTYPE_ 826 CellTemp4 : 1;
@@ -788,14 +802,14 @@ SIG_VALTYPE_ 651 FlexSensor2 : 1;
 SIG_VALTYPE_ 652 FlexSensor3 : 1;
 SIG_VALTYPE_ 653 SystemFlags : 1;
 SIG_VALTYPE_ 859 SystemFlags : 1;
-SIG_VALTYPE_ 845 Temperature41 : 1;
-SIG_VALTYPE_ 845 Temperature42 : 1;
-SIG_VALTYPE_ 846 Temperature43 : 1;
-SIG_VALTYPE_ 846 Temperature44 : 1;
-SIG_VALTYPE_ 847 Temperature45 : 1;
-SIG_VALTYPE_ 847 Temperature46 : 1;
-SIG_VALTYPE_ 848 Temperature47 : 1;
-SIG_VALTYPE_ 848 Temperature48 : 1;
+SIG_VALTYPE_ 845 CellTemp41 : 1;
+SIG_VALTYPE_ 845 CellTemp42 : 1;
+SIG_VALTYPE_ 846 CellTemp43 : 1;
+SIG_VALTYPE_ 846 CellTemp44 : 1;
+SIG_VALTYPE_ 847 CellTemp45 : 1;
+SIG_VALTYPE_ 847 CellTemp46 : 1;
+SIG_VALTYPE_ 848 CellTemp47 : 1;
+SIG_VALTYPE_ 848 CellTemp48 : 1;
 SIG_VALTYPE_ 485 RawThrottleInput : 1;
-SIG_VALTYPE_ 825 Temperature1 : 1;
-SIG_VALTYPE_ 825 Temperature2 : 1;
+SIG_VALTYPE_ 825 CellTemp1 : 1;
+SIG_VALTYPE_ 825 CellTemp2 : 1;
