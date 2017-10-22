@@ -1,0 +1,67 @@
+VERSION "HIPBNYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY/4/%%%/4/'%**4YYY///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+
+BS_:
+
+BU_: WS200 MCN_Powertrain Front_MCN Mid_MCN Rear_MCN IMU_MCN BIM1 BIM2 BIM3 BIM4 Computer BIM5 Rider_Controls GPS MCN1 MCN2 MCN3 Drive_Controls BIM6 BoschABS IMU Beaglebone
+
+
+BO_ 701 GPS_Time: 5 GPS
+ SG_ Hours : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Minutes : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Seconds : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Milliseconds : 24|16@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 702 GPS_Longitude: 5 GPS
+ SG_ Direction : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Longitude : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 706 GPS_Speed: 4 GPS
+ SG_ Speed : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 700 GPS_Date: 4 GPS
+ SG_ Day : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Month : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Year : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 703 GPS_Latitude: 5 GPS
+ SG_ Latitude : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Direction : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 704 GPS_Altitude: 4 GPS
+ SG_ Altitude : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 705 GPS_Precision: 5 GPS
+ SG_ HDOP : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Num_Satellites : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+
+
+VAL_ 702 Direction 87 "W" 69 "E" ;
+VAL_ 703 Direction 78 "N" 83 "S" ;
+SIG_VALTYPE_ 702 Longitude : 1;
+SIG_VALTYPE_ 706 Speed : 1;
+SIG_VALTYPE_ 703 Latitude : 1;
+SIG_VALTYPE_ 704 Altitude : 1;
+SIG_VALTYPE_ 705 HDOP : 1;
